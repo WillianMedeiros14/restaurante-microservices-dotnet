@@ -4,7 +4,6 @@ using ItemService.Data;
 using ItemService.Dtos;
 using ItemService.Models;
 
-
 namespace ItemService.EventProcessor
 {
     public class ProcessaEvento : IProcessaEvento
