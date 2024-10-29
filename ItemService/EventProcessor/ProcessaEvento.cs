@@ -13,9 +13,11 @@ namespace ItemService.EventProcessor
         private readonly IMapper _mapper;
         private readonly IServiceScopeFactory _scopeFactory;
 
-        public ProcessaEvento(IMapper mapper)
+        public ProcessaEvento(IMapper mapper, IServiceScopeFactory scopeFactory)
         {
             _mapper = mapper;
+            _scopeFactory = scopeFactory;
+
         }
 
         public void Processa(string mensagem)
