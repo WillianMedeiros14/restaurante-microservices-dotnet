@@ -8,7 +8,6 @@ namespace ItemService.EventProcessor
 {
     public class ProcessaEvento : IProcessaEvento
     {
-
         private readonly IMapper _mapper;
         private readonly IServiceScopeFactory _scopeFactory;
 
