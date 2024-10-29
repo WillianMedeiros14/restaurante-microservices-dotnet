@@ -61,7 +61,6 @@ public class RestauranteController : ControllerBase
 
         _rabbitMqClient.PublicaRestaurante(restauranteReadDto);
 
-
         return CreatedAtRoute(nameof(GetRestauranteById), new { restauranteReadDto.Id }, restauranteReadDto);
     }
 }
